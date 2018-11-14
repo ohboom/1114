@@ -55,7 +55,7 @@
 
             arc.append("path")
                .attr("d", path)
-               .attr("fill", function(d) { return color(d.data.browser); });
+               .attr("fill", function(d) { return color(d.data.money); });
         
             console.log(arc)
         
@@ -63,7 +63,7 @@
                .attr("transform", function(d) { 
                         return "translate(" + label.centroid(d) + ")"; 
                 })
-               .text(function(d) { return d.data.browser; });
+               .text(function(d) { return d.data.money; });
             });
 
             svg.append("g")
